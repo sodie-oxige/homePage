@@ -1,3 +1,9 @@
+import Bluesky from "./assets/bluesky.svg";
+import Booth from "./assets/booth.svg";
+import Icon from "./assets/icon.png";
+import Misskey from "./assets/misskey.png";
+import Skeb from "./assets/skeb.svg";
+import X from "./assets/x.svg";
 import HiddenLabelButton from "./component/HiddenLabelButton";
 
 function Home() {
@@ -11,7 +17,7 @@ function Home() {
       <div className="m-4 flex flex-col border p-8">
         <div className="flex">
           <div className="mr-6 aspect-square h-36 overflow-hidden rounded-lg">
-            <img src="./src/assets/icon.png" alt="icon" />
+            <img src={Icon} alt="icon" />
           </div>
           <div>
             <h2 className="mb-4 text-2xl">袖置</h2>
@@ -33,7 +39,7 @@ function Home() {
               }}
             >
               <div className="flex aspect-square h-8 cursor-pointer items-center justify-center rounded-lg bg-black">
-                <img src="./src/assets/x.svg" className="m-auto h-5" />
+                <img src={X} className="m-auto h-5" />
               </div>
             </HiddenLabelButton>
             <HiddenLabelButton
@@ -44,10 +50,7 @@ function Home() {
               }}
             >
               <div className="flex aspect-square h-8 items-center justify-center">
-                <img
-                  src="./src/assets/bluesky.svg"
-                  className="h-6 object-cover"
-                />
+                <img src={Bluesky} className="h-6 object-cover" />
               </div>
             </HiddenLabelButton>
             <HiddenLabelButton
@@ -57,10 +60,7 @@ function Home() {
               }}
             >
               <div className="flex aspect-square h-8 items-center justify-center">
-                <img
-                  src="./src/assets/misskey.png"
-                  className="h-11 object-cover"
-                />
+                <img src={Misskey} className="h-11 object-cover" />
               </div>
             </HiddenLabelButton>
             <HiddenLabelButton
@@ -69,7 +69,7 @@ function Home() {
                 location.href = "https://sodie-oxige.booth.pm/";
               }}
             >
-              <img src="./src/assets/booth.svg" className="h-8" />
+              <img src={Booth} className="h-8" />
             </HiddenLabelButton>
             <HiddenLabelButton
               label="Skeb"
@@ -77,7 +77,7 @@ function Home() {
                 location.href = "https://skeb.jp/@sodie_oxige";
               }}
             >
-              <img src="./src/assets/skeb.svg" className="h-8" />
+              <img src={Skeb} className="h-8" />
             </HiddenLabelButton>
           </div>
         </div>
