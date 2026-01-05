@@ -1,4 +1,5 @@
 import Icon from "./assets/icon.png";
+import AntooThumbnail from "./assets/image/antoo-thumbnail01.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
 
 const SnsIconsGlob = import.meta.glob<{ default: string }>(
@@ -124,7 +125,7 @@ function Home() {
                   <span className="text-xs"> - vocaloid/voiceloid</span>
                 </h2>
                 <p>
-                  羽賀様の合成音声イラスト集『synthetic
+                  羽賀氏の合成音声イラスト集『synthetic
                   singers!』に寄稿したイラストです。
                 </p>
               </div>
@@ -138,7 +139,7 @@ function Home() {
                   <span className="text-xs"> - vocaloid/voiceloid</span>
                 </h2>
                 <p>
-                  羽賀様の合成音声イラスト集『synthetic
+                  羽賀氏の合成音声イラスト集『synthetic
                   singers!』に寄稿したイラストです。
                 </p>
               </div>
@@ -160,7 +161,7 @@ function Home() {
                   <span className="text-xs"> - アークナイツ</span>
                 </h2>
                 <p>
-                  浅井ガミ様のアークナイツイラスト集『Azure』に寄稿したイラストです。
+                  浅井ガミ氏のアークナイツイラスト集『Azure』に寄稿したイラストです。
                 </p>
               </div>
             </div>
@@ -173,11 +174,57 @@ function Home() {
                   <span className="text-xs"> - アークナイツ</span>
                 </h2>
                 <p>
-                  よか様のアークナイツイラスト集『THERMO』に寄稿したイラストです。
+                  よか氏のアークナイツイラスト集『THERMO』に寄稿したイラストです。
                 </p>
               </div>
               <img
                 src={Illust["2025-12_ミュルジス"]}
+                className="h-[70vh] rounded-xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="w-full">
+          <span className="font-goldman block translate-y-2 text-xl">
+            3D MODEL
+          </span>
+          <div className="flex w-full flex-col gap-8 border px-12 py-8">
+            <div className="flex w-full">
+              <div className="mx-12 flex-1">
+                <h2 className="mb-4 text-2xl font-bold">
+                  オリジナル3Dモデル『アントー』
+                  <span className="text-xs">¥1,000</span>
+                </h2>
+                <p>VRChatでの使用を想定したオリジナル3dモデルです。</p>
+                <ul className="my-4 list-disc pl-6">
+                  <li>ポリゴン数 △29,668</li>
+                  <li>liltoonシェーダー使用</li>
+                  <li>
+                    VCC用unitypackageファイル、3dモデルblendファイル、
+                    <br />
+                    テクスチャpsdファイルあり
+                  </li>
+                  <li>
+                    マテリアルは　身体,衣装,メガネレンズの3種。
+                    <br />
+                    衣装は複数パターン、各マテリアルはmobile版も同梱
+                  </li>
+                  <li>両手14種（右手優先）で表情設定済み</li>
+                  <li>
+                    エクスプレッションメニューからの衣装の着脱対応
+                    <br />
+                    （excellent版でも利用可！）
+                  </li>
+                </ul>
+                <a
+                  href="https://sodie-oxige.booth.pm/items/7620978"
+                  className="text-blue-500 underline"
+                >
+                  商品ページ↗
+                </a>
+              </div>
+              <img
+                src={AntooThumbnail}
                 className="h-[70vh] rounded-xl shadow-lg"
               />
             </div>
