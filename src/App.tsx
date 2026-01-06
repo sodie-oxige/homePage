@@ -15,6 +15,7 @@ function App() {
         </div>
       </div>
       <div className="bg-grid fixed top-0 left-0 -z-10 min-h-screen min-w-screen"></div>
+      {/* <Lifegame className="fixed top-0 left-0 -z-10 h-full w-full object-cover" /> */}
     </>
   );
 }
