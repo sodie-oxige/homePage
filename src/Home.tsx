@@ -38,12 +38,14 @@ function Home() {
           <span className="font-goldman block translate-y-2 text-xl">
             PROFILE
           </span>
-          <div className="flex w-full flex-col border p-8">
-            <div className="flex">
-              <img
-                src={Icon}
-                className="mr-6 aspect-square h-36 overflow-hidden rounded-lg shadow-lg"
-              />
+          <div className="flex w-full flex-col border p-4 md:p-8">
+            <div className="flex gap-6">
+              <div className="flex flex-col items-center justify-center">
+                <img
+                  src={Icon}
+                  className="aspect-square max-h-36 overflow-hidden rounded-lg shadow-lg"
+                />
+              </div>
               <div>
                 <h2 className="mb-4 text-2xl">袖置</h2>
                 <p>
@@ -113,13 +115,13 @@ function Home() {
           <span className="font-goldman block translate-y-2 text-xl">
             ILLUSTLATION
           </span>
-          <div className="flex w-full flex-col gap-8 border px-12 py-8">
-            <div className="flex w-full items-center">
+          <div className="flex w-full flex-col gap-8 border p-4 md:px-12 md:py-8">
+            <div className="flex w-full flex-row flex-wrap items-center justify-center">
               <img
                 src={Illust["2025-12_結月ゆかり"]}
-                className="h-[70vh] rounded-xl shadow-lg"
+                className="max-h-[70vh] rounded-xl shadow-lg"
               />
-              <div className="mx-12 flex-1">
+              <div className="m-4 flex-1 md:mx-12 md:my-8">
                 <h2 className="mb-4 text-2xl font-bold">
                   結月ゆかり
                   <span className="text-xs"> - vocaloid/voiceloid</span>
@@ -132,30 +134,30 @@ function Home() {
             </div>
             <hr />
 
-            <div className="flex w-full items-center">
-              <div className="mx-12 flex-1">
-                <h2 className="mb-4 text-2xl font-bold">
-                  結月ゆかり
-                  <span className="text-xs"> - vocaloid/voiceloid</span>
-                </h2>
-                <p>
-                  羽賀氏の合成音声イラスト集『synthetic
-                  singers!』に寄稿したイラストです。
-                </p>
-              </div>
+            <div className="flex w-full flex-row-reverse flex-wrap items-center justify-center">
               <img
                 src={Illust["2025-12_結月ゆかり2"]}
-                className="h-[70vh] rounded-xl shadow-lg"
+                className="max-h-[70vh] rounded-xl shadow-lg"
               />
+              <div className="m-4 flex-1 md:mx-12 md:my-8">
+                <h2 className="mb-4 text-2xl font-bold">
+                  結月ゆかり
+                  <span className="text-xs"> - vocaloid/voiceloid</span>
+                </h2>
+                <p>
+                  羽賀氏の合成音声イラスト集『synthetic
+                  singers!』に寄稿したイラストです。
+                </p>
+              </div>
             </div>
             <hr />
 
-            <div className="flex w-full items-center">
+            <div className="flex w-full flex-row flex-wrap items-center justify-center">
               <img
                 src={Illust["2025-12_ハイモア"]}
-                className="h-[70vh] rounded-xl shadow-lg"
+                className="max-h-[70vh] rounded-xl shadow-lg"
               />
-              <div className="mx-12 flex-1">
+              <div className="m-4 flex-1 md:mx-12 md:my-8">
                 <h2 className="mb-4 text-2xl font-bold">
                   ハイモア
                   <span className="text-xs"> - アークナイツ</span>
@@ -167,8 +169,12 @@ function Home() {
             </div>
             <hr />
 
-            <div className="flex w-full items-center">
-              <div className="mx-12 flex-1">
+            <div className="flex w-full flex-row-reverse flex-wrap items-center justify-center">
+              <img
+                src={Illust["2025-12_ミュルジス"]}
+                className="max-h-[70vh] rounded-xl shadow-lg"
+              />
+              <div className="x-4 flex-1 md:mx-12 md:my-8">
                 <h2 className="mb-4 text-2xl font-bold">
                   ミュルジス
                   <span className="text-xs"> - アークナイツ</span>
@@ -177,10 +183,6 @@ function Home() {
                   よか氏のアークナイツイラスト集『THERMO』に寄稿したイラストです。
                 </p>
               </div>
-              <img
-                src={Illust["2025-12_ミュルジス"]}
-                className="h-[70vh] rounded-xl shadow-lg"
-              />
             </div>
           </div>
         </div>
@@ -188,9 +190,15 @@ function Home() {
           <span className="font-goldman block translate-y-2 text-xl">
             3D MODEL
           </span>
-          <div className="flex w-full flex-col gap-8 border px-12 py-8">
-            <div className="flex w-full">
-              <div className="mx-12 flex-1">
+          <div className="flex w-full flex-col gap-8 border p-4 md:px-12 md:py-8">
+            <div className="flex w-full flex-row flex-wrap items-center justify-center">
+              <img
+                flex-wrap
+                justify-center
+                src={AntooThumbnail}
+                className="max-h-[50vh] rounded-xl shadow-lg"
+              />
+              <div className="x-4 flex-1 md:mx-12 md:my-8">
                 <h2 className="mb-4 text-2xl font-bold">
                   オリジナル3Dモデル『アントー』
                   <span className="text-xs">¥1,000</span>
@@ -223,10 +231,6 @@ function Home() {
                   商品ページ↗
                 </a>
               </div>
-              <img
-                src={AntooThumbnail}
-                className="h-[70vh] rounded-xl shadow-lg"
-              />
             </div>
           </div>
         </div>
