@@ -1,14 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap");
 
 @import "tailwindcss";
 @theme {
   --font-sans: "M PLUS 1p", sans-serif;
+  --font-goldman: "Goldman", cursive;
 }
 
 .bg-grid {
   background-image:
-    linear-gradient(to right, rgba(0 0 0 / 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0 0 0 / 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0 0 0 / 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0 0 0 / 0.03) 1px, transparent 1px);
   background-position: center;
-  background-size: 32px 32px;
+  background-size: 16px 16px;
+}
+.trim-cap-alpha {
+  text-box-trim: trim-both;
+  text-box-edge: cap alphabetic;
 }
