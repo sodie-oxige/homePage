@@ -1,5 +1,5 @@
 import Icon from "./assets/icon.png";
-import AntooThumbnail from "./assets/image/antoo-thumbnail01.png";
+import AntooThumbnail from "./assets/image/Antoo-thumbnail01.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
 
 const SnsIconsGlob = import.meta.glob<{ default: string }>(

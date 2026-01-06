@@ -2,7 +2,6 @@ import "./App.css";
 
 import { Route, Routes } from "react-router-dom";
 
-import Lifegame from "./component/Lifegame";
 import Home from "./Home";
 
 function App() {
@@ -15,8 +14,8 @@ function App() {
           </Routes>
         </div>
       </div>
-      {/* <div className="bg-grid fixed top-0 left-0 -z-10 min-h-screen min-w-screen"></div> */}
-      <Lifegame className="fixed top-0 left-0 -z-10 min-h-screen min-w-screen" />
+      <div className="bg-grid fixed top-0 left-0 -z-10 min-h-screen min-w-screen"></div>
+      {/* <Lifegame className="fixed top-0 left-0 -z-10 h-full w-full object-cover" /> */}
     </>
   );
 }
