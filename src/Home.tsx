@@ -3,7 +3,8 @@ import { useState } from "react";
 import Icon from "./assets/icon.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
 import ThreeDimensional from "./Work/3DCG";
-import Illust from "./Work/Illust";
+import IllustFanart from "./Work/Illust-fanart";
+import IllustOriginal from "./Work/Illust-original";
 
 const SnsIconsGlob = import.meta.glob<{ default: string }>(
   "./assets/sns/*.{png,jpg,jpeg,svg,gif}",
@@ -126,7 +127,8 @@ function Home() {
           </div>
         </div>
 
-        {[0, 1].includes(articleIndex) && <Illust />}
+        {[0, 1].includes(articleIndex) && <IllustOriginal />}
+        {[0, 1].includes(articleIndex) && <IllustFanart />}
         {[0, 2].includes(articleIndex) && <ThreeDimensional />}
       </div>
     </>
