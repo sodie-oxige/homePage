@@ -24,7 +24,7 @@ function Illust() {
       <span className="font-goldman block translate-y-2 text-xl">
         ILLUSTLATION - ORIGINAL
       </span>
-      <GridContainer className="flex w-full flex-col gap-8 border p-4 md:px-12 md:py-8">
+      <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
           src={Illusts["2026-03_キラキラアイドル"]}
           title="キラキラアイドル"

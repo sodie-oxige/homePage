@@ -33,7 +33,7 @@ function Home() {
         <h1 className="text-bold my-12 px-4 text-center text-3xl">袖置き場</h1>
       </div>
 
-      <div className="mx-auto flex w-4/5 flex-col items-center gap-8 py-8">
+      <div className="mx-auto flex flex-col items-center gap-8 py-8 md:w-4/5">
         <div className="w-full">
           <span className="font-goldman block translate-y-2 text-xl">
             PROFILE

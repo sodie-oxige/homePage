@@ -7,8 +7,6 @@ function ThreeDimensional() {
       <div className="flex w-full flex-col gap-8 border p-4 md:px-12 md:py-8">
         <div className="flex w-full flex-row flex-wrap items-center justify-center">
           <img
-            flex-wrap
-            justify-center
             src={AntooThumbnail}
             className="max-h-[50vh] rounded-xl shadow-lg"
           />

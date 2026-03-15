@@ -24,7 +24,7 @@ function Illust() {
       <span className="font-goldman block translate-y-2 text-xl">
         ILLUSTLATION - FANART
       </span>
-      <GridContainer className="flex w-full flex-col gap-8 border p-4 md:px-12 md:py-8">
+      <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
           src={Illusts["2025-12_結月ゆかり"]}
           title="結月ゆかり"
