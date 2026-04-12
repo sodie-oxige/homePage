@@ -31,6 +31,13 @@ function Illust() {
       </span>
       <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
+          src={Illusts["2026-03_ヤチヨ"]}
+          thumbnailSrc={MinIllusts["2026-03_ヤチヨ"]}
+          title="ヤチヨ"
+          subtitle="超かぐや姫！"
+          text="面白かったので。"
+        />
+        <ImageCard
           src={Illusts["2025-12_結月ゆかり"]}
           thumbnailSrc={MinIllusts["2025-12_結月ゆかり"]}
           title="結月ゆかり"

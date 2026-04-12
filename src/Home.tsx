@@ -47,7 +47,9 @@ function Home() {
                 <p>
                   絵を描きます。
                   <br />
-                  TRPGとVRChatが最近の趣味です。
+                  TRPGが趣味です。
+                  <br />
+                  最近自炊にハマってます。
                 </p>
               </div>
             </div>
