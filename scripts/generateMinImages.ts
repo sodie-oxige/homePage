@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 
-const inputDir = "src/assets/illust";
-const outputDir = "src/assets/illust/min";
+const inputDir = path.resolve(process.cwd(), "src/assets/illust");
+const outputDir = path.resolve(process.cwd(), "src/assets/illust/min");
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });
