@@ -21,7 +21,7 @@ function ImageCard({
     const el = imageRef.current;
     if (!el) return;
     const rotateX =
-      ((e.clientY - el.getBoundingClientRect().top) / el.offsetHeight - 0.5) *
+      -((e.clientY - el.getBoundingClientRect().top) / el.offsetHeight - 0.5) *
       2;
     const rotateY =
       ((e.clientX - el.getBoundingClientRect().left) / el.offsetWidth - 0.5) *
