@@ -5,10 +5,13 @@
   "type": "module",
   "homepage": "https://sodie-oxige.github.io/homePage",
   "scripts": {
+    "predev": "npm run pre",
     "dev": "vite",
+    "prebuild": "npm run pre",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "pre": "ts-node scripts/generateMinImages.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -31,6 +34,7 @@
     "globals": "^16.5.0",
     "prettier": "^3.7.4",
     "prettier-plugin-tailwindcss": "^0.7.2",
+    "sharp": "^0.34.5",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4"

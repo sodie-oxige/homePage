@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import Icon from "./assets/icon.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
 import ThreeDimensional from "./Work/3DCG";
@@ -24,8 +22,6 @@ function toImagePaths(glob: Record<string, { default: string }>) {
 }
 
 function Home() {
-  const [articleIndex, setArticleIndex] = useState(0);
-
   return (
     <>
       <title>袖置き場 - Home</title>
@@ -111,46 +107,11 @@ function Home() {
           </div>
         </div>
 
-        <div className="font-goldman flex flex-col gap-4 underline">
-          <MarkedElement isMarked={articleIndex == 0}>
-            <span onClick={() => setArticleIndex(0)} className="text-2xl">
-              WORK
-            </span>
-          </MarkedElement>
-          <div className="ml-4 flex gap-12 text-lg">
-            <MarkedElement isMarked={articleIndex == 1}>
-              <span onClick={() => setArticleIndex(1)}>ILLUSTLATION</span>
-            </MarkedElement>
-            <MarkedElement isMarked={articleIndex == 2}>
-              <span onClick={() => setArticleIndex(2)}>3D MODEL</span>
-            </MarkedElement>
-          </div>
-        </div>
-
-        {[0, 1].includes(articleIndex) && <IllustOriginal />}
-        {[0, 1].includes(articleIndex) && <IllustFanart />}
-        {[0, 2].includes(articleIndex) && <ThreeDimensional />}
+        <IllustOriginal />
+        <IllustFanart />
+        <ThreeDimensional />
       </div>
     </>
-  );
-}
-
-function MarkedElement({
-  children,
-  isMarked,
-}: {
-  children: React.ReactElement;
-  isMarked: boolean;
-}) {
-  return (
-    <div className="relative">
-      {children}
-      {isMarked && (
-        <div className="absolute top-0 bottom-0 -left-3 flex items-center">
-          <div className="border-y-3 border-l-6 border-x-black border-y-transparent"></div>
-        </div>
-      )}
-    </div>
   );
 }
 

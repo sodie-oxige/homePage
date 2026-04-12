@@ -2,11 +2,18 @@ import { useEffect, useRef } from "react";
 
 interface ImageCardProps {
   src: string;
+  thumbnailSrc?: string;
   title?: string;
   subtitle?: string;
   text?: string;
 }
-function ImageCard({ src, title, subtitle, text }: ImageCardProps) {
+function ImageCard({
+  src,
+  thumbnailSrc,
+  title,
+  subtitle,
+  text,
+}: ImageCardProps) {
   const imageRef = useRef<HTMLDivElement>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -52,7 +59,7 @@ function ImageCard({ src, title, subtitle, text }: ImageCardProps) {
         ref={imageRef}
         onClick={handleClickOpenModal}
       >
-        <img src={src} className="rounded-xl" />
+        <img src={thumbnailSrc || src} className="rounded-xl" />
       </div>
 
       <div

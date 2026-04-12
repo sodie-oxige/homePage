@@ -1,11 +1,16 @@
 import GridContainer from "../component/GridContainer";
 import ImageCard from "../component/ImageCard";
 
+const MinIllustGlob = import.meta.glob<{ default: string }>(
+  "../assets/illust/min/*.{png,jpg,jpeg,svg,gif}",
+  { eager: true },
+);
 const IllustGlob = import.meta.glob<{ default: string }>(
   "../assets/illust/*.{png,jpg,jpeg,svg,gif}",
   { eager: true },
 );
 const Illusts: Record<string, string> = toImagePaths(IllustGlob);
+const MinIllusts: Record<string, string> = toImagePaths(MinIllustGlob);
 
 function toImagePaths(glob: Record<string, { default: string }>) {
   const res: Record<string, string> = {};
@@ -27,24 +32,28 @@ function Illust() {
       <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
           src={Illusts["2025-12_結月ゆかり"]}
+          thumbnailSrc={MinIllusts["2025-12_結月ゆかり"]}
           title="結月ゆかり"
           subtitle="vocaloid/voiceloid"
           text="羽賀氏の合成音声イラスト集『synthetic singers!』に寄稿したイラストです。"
         />
         <ImageCard
           src={Illusts["2025-12_結月ゆかり2"]}
+          thumbnailSrc={MinIllusts["2025-12_結月ゆかり2"]}
           title="結月ゆかり"
           subtitle="vocaloid/voiceloid"
           text="羽賀氏の合成音声イラスト集『synthetic singers!』に寄稿したイラストです。"
         />
         <ImageCard
           src={Illusts["2025-12_ハイモア"]}
+          thumbnailSrc={MinIllusts["2025-12_ハイモア"]}
           title="ハイモア"
           subtitle="アークナイツ"
           text="浅井ガミ氏のアークナイツイラスト集『Azure』に寄稿したイラストです。"
         />
         <ImageCard
           src={Illusts["2025-12_ミュルジス"]}
+          thumbnailSrc={MinIllusts["2025-12_ミュルジス"]}
           title="ミュルジス"
           subtitle="アークナイツ"
           text="よか氏のアークナイツイラスト集『THERMO』に寄稿したイラストです。"
