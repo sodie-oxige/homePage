@@ -20,7 +20,7 @@ if (!fs.existsSync(outputDir)) {
       const outputPath = path.join(outputDir, file);
 
       await sharp(inputPath)
-        .resize(200)
+        .resize(500)
         .webp({ quality: 70 })
         .toFile(outputPath.replace(/\.\w+$/, ".webp"));
     }),

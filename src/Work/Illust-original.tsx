@@ -6,7 +6,7 @@ const IllustGlob = import.meta.glob<{ default: string }>(
   { eager: true },
 );
 const MinIllustGlob = import.meta.glob<{ default: string }>(
-  "../assets/illust/min/*.{png,jpg,jpeg,svg,gif}",
+  "../assets/illust/min/*.webp",
   { eager: true },
 );
 const Illusts: Record<string, string> = toImagePaths(IllustGlob);
@@ -30,6 +30,12 @@ function Illust() {
         ILLUSTLATION - ORIGINAL
       </span>
       <GridContainer className="w-full border p-2 md:px-12 md:py-8">
+        <ImageCard
+          src={Illusts["2026-04_宝晶結珠"]}
+          thumbnailSrc={MinIllusts["2026-04_宝晶結珠"]}
+          title="宝晶結珠"
+          text="自作TRPGシナリオNPC用立ち絵"
+        />
         <ImageCard
           src={Illusts["2026-03_余色透"]}
           thumbnailSrc={MinIllusts["2026-03_余色透"]}
