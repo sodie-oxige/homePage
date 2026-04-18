@@ -6,7 +6,7 @@ const IllustGlob = import.meta.glob<{ default: string }>(
   { eager: true },
 );
 const MinIllustGlob = import.meta.glob<{ default: string }>(
-  "../assets/illust/min/*.{png,jpg,jpeg,svg,gif}",
+  "../assets/illust/min/*.webp",
   { eager: true },
 );
 const Illusts: Record<string, string> = toImagePaths(IllustGlob);

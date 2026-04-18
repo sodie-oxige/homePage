@@ -1,12 +1,12 @@
 import GridContainer from "../component/GridContainer";
 import ImageCard from "../component/ImageCard";
 
-const MinIllustGlob = import.meta.glob<{ default: string }>(
-  "../assets/illust/min/*.{png,jpg,jpeg,svg,gif}",
-  { eager: true },
-);
 const IllustGlob = import.meta.glob<{ default: string }>(
   "../assets/illust/*.{png,jpg,jpeg,svg,gif}",
+  { eager: true },
+);
+const MinIllustGlob = import.meta.glob<{ default: string }>(
+  "../assets/illust/min/*.webp",
   { eager: true },
 );
 const Illusts: Record<string, string> = toImagePaths(IllustGlob);

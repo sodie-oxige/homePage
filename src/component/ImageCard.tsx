@@ -22,10 +22,10 @@ function ImageCard({
     if (!el) return;
     const rotateX =
       -((e.clientY - el.getBoundingClientRect().top) / el.offsetHeight - 0.5) *
-      2;
+      1;
     const rotateY =
       ((e.clientX - el.getBoundingClientRect().left) / el.offsetWidth - 0.5) *
-      2;
+      1;
     el.style.transform = `
       perspective(600px)
       rotateX(${rotateX}deg)
@@ -59,7 +59,7 @@ function ImageCard({
         ref={imageRef}
         onClick={handleClickOpenModal}
       >
-        <img src={thumbnailSrc || src} className="rounded-xl" />
+        <img src={thumbnailSrc || src} className="w-full rounded-xl" />
       </div>
 
       <div
