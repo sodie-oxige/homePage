@@ -1,6 +1,5 @@
 import Icon from "./assets/icon.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
-import ThreeDimensional from "./Work/3DCG";
 import IllustFanart from "./Work/Illust-fanart";
 import IllustOriginal from "./Work/Illust-original";
 
@@ -111,7 +110,6 @@ function Home() {
 
         <IllustOriginal />
         <IllustFanart />
-        <ThreeDimensional />
       </div>
     </>
   );
