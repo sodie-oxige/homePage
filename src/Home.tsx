@@ -58,9 +58,7 @@ function Home() {
               <div className="flex gap-3 pl-2">
                 <HiddenLabelButton
                   label="X.com"
-                  onClick={() => {
-                    location.href = "https://x.com/sodie_oxige";
-                  }}
+                  href="https://x.com/sodie_oxige"
                 >
                   <div className="flex aspect-square h-8 cursor-pointer items-center justify-center rounded-lg bg-black">
                     <img src={SnsIcons.x} className="m-auto h-5" />
@@ -68,10 +66,7 @@ function Home() {
                 </HiddenLabelButton>
                 <HiddenLabelButton
                   label="Bluesky"
-                  onClick={() => {
-                    location.href =
-                      "https://bsky.app/profile/sodie-oxige.bsky.social";
-                  }}
+                  href="https://bsky.app/profile/sodie-oxige.bsky.social"
                 >
                   <div className="flex aspect-square h-8 items-center justify-center">
                     <img src={SnsIcons.bluesky} className="h-6 object-cover" />
@@ -79,27 +74,29 @@ function Home() {
                 </HiddenLabelButton>
                 <HiddenLabelButton
                   label="misskey"
-                  onClick={() => {
-                    location.href = "https://misskey.io/@sodieoxige";
-                  }}
+                  href="https://misskey.io/@sodieoxige"
                 >
                   <div className="flex aspect-square h-8 items-center justify-center">
                     <img src={SnsIcons.misskey} className="h-11 object-cover" />
                   </div>
                 </HiddenLabelButton>
                 <HiddenLabelButton
+                  label="Tumbr"
+                  href="https://sodie-oxige.tumblr.com/"
+                >
+                  <div className="flex aspect-square h-8 items-center justify-center">
+                    <img src={SnsIcons.tumblr} className="h-7 object-cover" />
+                  </div>
+                </HiddenLabelButton>
+                <HiddenLabelButton
                   label="BOOTH"
-                  onClick={() => {
-                    location.href = "https://sodie-oxige.booth.pm/";
-                  }}
+                  href="https://sodie-oxige.booth.pm/"
                 >
                   <img src={SnsIcons.booth} className="h-8" />
                 </HiddenLabelButton>
                 <HiddenLabelButton
                   label="Skeb"
-                  onClick={() => {
-                    location.href = "https://skeb.jp/@sodie_oxige";
-                  }}
+                  href="https://skeb.jp/@sodie_oxige"
                 >
                   <img src={SnsIcons.skeb} className="h-8" />
                 </HiddenLabelButton>

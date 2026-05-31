@@ -1,13 +1,15 @@
 function HiddenLabelButton({
   onClick,
+  href,
   children,
   label,
 }: {
   onClick?: () => void;
+  href?: string;
   children: React.ReactNode;
   label?: string;
 }) {
-  return (
+  const content = (
     <div
       onClick={onClick}
       className="group relative aspect-square cursor-pointer"
@@ -20,6 +22,14 @@ function HiddenLabelButton({
       )}
     </div>
   );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank">
+        {content}
+      </a>
+    );
+  } else return content;
 }
 
 export default HiddenLabelButton;
