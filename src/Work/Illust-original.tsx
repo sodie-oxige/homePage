@@ -31,22 +31,28 @@ function Illust() {
       </span>
       <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
+          src={Illusts["2026-05_水奈月光"]}
+          thumbnailSrc={MinIllusts["2026-05_水奈月光"]}
+          title="水奈月光"
+          text="自作TRPGシナリオ用NPC立ち絵"
+        />
+        <ImageCard
           src={Illusts["2026-05_紅霧夜蜂"]}
           thumbnailSrc={MinIllusts["2026-05_紅霧夜蜂"]}
           title="紅霧夜蜂"
-          text="TRPG用立ち絵"
+          text="TRPG用PC立ち絵"
         />
         <ImageCard
           src={Illusts["2026-05_藍川歩"]}
           thumbnailSrc={MinIllusts["2026-05_藍川歩"]}
           title="藍川歩"
-          text="TRPG用立ち絵"
+          text="TRPG用PC立ち絵"
         />
         <ImageCard
           src={Illusts["2026-04_宝晶結珠"]}
           thumbnailSrc={MinIllusts["2026-04_宝晶結珠"]}
           title="宝晶結珠"
-          text="自作TRPGシナリオNPC用立ち絵"
+          text="自作TRPGシナリオ用NPC立ち絵"
         />
         <ImageCard
           src={Illusts["2026-03_余色透"]}
@@ -64,13 +70,13 @@ function Illust() {
           src={Illusts["2026-03_六原廻"]}
           thumbnailSrc={MinIllusts["2026-03_六原廻"]}
           title="六原廻"
-          text="TRPG用立ち絵"
+          text="TRPG用PC立ち絵"
         />
         <ImageCard
           src={Illusts["2026-02_美影ライム(冬服)"]}
           thumbnailSrc={MinIllusts["2026-02_美影ライム(冬服)"]}
           title="美影ライム(冬服)"
-          text="TRPG用立ち絵"
+          text="TRPG用PC立ち絵"
         />
         <ImageCard
           src={Illusts["2026-01_アントー(正月)"]}
