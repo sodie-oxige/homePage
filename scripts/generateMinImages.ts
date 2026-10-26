@@ -14,7 +14,12 @@ if (!fs.existsSync(outputDir)) {
 
   await Promise.all(
     files.map(async (file) => {
-      if (!file.endsWith(".png")) return;
+      if (
+        !file.endsWith(".png") &&
+        !file.endsWith(".jpg") &&
+        !file.endsWith(".jpeg")
+      )
+        return;
 
       const inputPath = path.join(inputDir, file);
       const outputPath = path.join(outputDir, file);

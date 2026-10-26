@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { Fragment, useEffect, useRef } from "react";
 
 interface ImageCardProps {
   src: string;
@@ -84,7 +84,14 @@ function ImageCard({
               {title}
               {subtitle && <span className="text-xs"> - {subtitle}</span>}
             </h2>
-            <p>{text}</p>
+            <p>
+              {text?.split(/\n|\\n/g).map((line, i) => (
+                <Fragment key={i}>
+                  {line}
+                  {i < text!.split(/\n|\\n/g).length - 1 ? <br /> : null}
+                </Fragment>
+              ))}
+            </p>
           </div>
           <div
             className="absolute inset-0 -z-10 h-screen w-screen bg-black/80"

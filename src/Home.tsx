@@ -1,5 +1,6 @@
 import Icon from "./assets/icon.png";
 import HiddenLabelButton from "./component/HiddenLabelButton";
+import Assets from "./Work/Assets";
 import IllustFanart from "./Work/Illust-fanart";
 import IllustOriginal from "./Work/Illust-original";
 
@@ -107,6 +108,7 @@ function Home() {
 
         <IllustOriginal />
         <IllustFanart />
+        <Assets />
       </div>
     </>
   );
