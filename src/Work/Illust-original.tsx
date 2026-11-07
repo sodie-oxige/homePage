@@ -31,6 +31,24 @@ function Illust() {
       </span>
       <GridContainer className="w-full border p-2 md:px-12 md:py-8">
         <ImageCard
+          src={Illusts["2026-10_喜嶋愛芽"]}
+          thumbnailSrc={MinIllusts["2026-10_喜嶋愛芽"]}
+          title="喜嶋愛芽"
+          text="TRPG用PC立ち絵"
+        />
+        <ImageCard
+          src={Illusts["2026-11_白昼くらら"]}
+          thumbnailSrc={MinIllusts["2026-11_白昼くらら"]}
+          title="白昼くらら"
+          text="TRPG用PC立ち絵"
+        />
+        <ImageCard
+          src={Illusts["2026-11_美影ライム"]}
+          thumbnailSrc={MinIllusts["2026-11_美影ライム"]}
+          title="美影ライム"
+          text="TRPG用PC立ち絵"
+        />
+        <ImageCard
           src={Illusts["2026-05_水奈月光"]}
           thumbnailSrc={MinIllusts["2026-05_水奈月光"]}
           title="水奈月光"
